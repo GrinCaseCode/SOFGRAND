@@ -307,6 +307,7 @@ form {
 .content-billbord {
 	padding-top: 140px;
 	height: 100vh;
+	min-height: 600px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -491,6 +492,7 @@ form {
 .tabs li {
 	flex-grow: 1;
 }
+.link-tab,
 .tabs a {
 	padding-bottom: 23px;
 	color: #363636;
@@ -500,13 +502,8 @@ form {
 	font-weight: 500;
 	border-bottom: 3px transparent solid;
 	text-transform: uppercase;
-}
-.tabs.tabs_bottom a:hover,
-.tabs.tabs_bottom .active a,
-.tabs a:hover,
-.tabs .active a {
-	color: #bda45f;
-	border-color: #bda45f;
+	cursor: pointer;
+	transition: all 0.3s;
 }
 .tabs.tabs_bottom {
 	left: 15px;
@@ -515,8 +512,18 @@ form {
 	position: absolute;
 	z-index: 3;
 }
+.tabs_bottom .link-tab,
 .tabs.tabs_bottom a {
 	color: #fff;
+}
+.slick-current .link-tab,
+.link-tab:hover,
+.tabs.tabs_bottom a:hover,
+.tabs.tabs_bottom .active a,
+.tabs a:hover,
+.tabs .active a {
+	color: #bda45f;
+	border-color: #bda45f;
 }
 .tab-pane {
 	display: none;
@@ -682,6 +689,8 @@ form {
 	transition: all 0.3s;
 	cursor: pointer;
 }
+.slider-for-rooms:not(.slick-initialized) > li:not(:first-child),
+.slider-tab-container:not(.slick-initialized) > li:not(:first-child),
 .slider-photo:not(.slick-initialized) > li:not(:first-child),
 .slider-images:not(.slick-initialized) > li:not(:first-child) {
 	display: none;
@@ -920,11 +929,13 @@ form {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 140%;
+	font-family: 'Muller';
 	letter-spacing: 0.03em;
 	color: #363636;
 }
 .content-balloon p {
 	margin-bottom: 7px;
+	font-family: 'Muller';
 }
 .link-page {
 	font-size: 13px;
@@ -1401,6 +1412,7 @@ form {
 	font-weight: 500;
 	letter-spacing: 0.03em;
 	color: #e1d6b7;
+	display: block;
 }
 .footer__nav li {
 	margin-bottom: 10px;
@@ -1497,4 +1509,73 @@ form {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+}
+.slider-tabs {
+	display: block;
+}
+.slider-nav-rooms .link-tab {
+	padding: 0 40px;
+	padding-bottom: 19px;
+}
+.comprise .link-tab {
+	padding: 0 30px;
+	padding-bottom: 19px;
+}
+.services .link-tab {
+	padding: 0 35px;
+	padding-bottom: 19px;
+}
+.slider-nav-rooms:not(.slick-initialized),
+.slider-tabs:not(.slick-initialized) {
+	display: none;
+}
+.unit-room__mobile-image {
+	display: none;
+}
+.services .slider-tab-container {
+	margin-top: 42px;
+}
+.comprise .slider-tab-container {
+	margin-top: 29px;
+}
+.tab-mobile {
+	display: none;
+}
+.btn-tab {
+	display: none;
+}
+.footer__title i {
+	display: none;
+}
+.buttons-fixed {
+	display: none;
+}
+.header.fixed {
+	backdrop-filter: initial;
+}
+.header__fixed {
+	padding: 20px 0;
+	transform: translateY(-100px);
+	transition: all 0.5s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 900;
+	backdrop-filter: blur(10px);
+	background: #323546;
+}
+.header.fixed .header__fixed {
+	transform: translateY(0px);
+}
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__fixed .logo img {
+	width: 188px;
+}
+.header__fixed .logo {
+	margin-left: -25px;
 }

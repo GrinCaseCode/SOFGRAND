@@ -68,16 +68,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
 	});
 
-	$('.slider-photo').slick({
-		arrows: true,
-		dots: false,
-		infinite: true,
-		touchThreshold: 1000,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
-		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
-	});
+	
 
 	$('.slider-offers').slick({
 		arrows: true,
@@ -88,8 +79,132 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
-	});
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			}
+			]
+		});
 
+	
+
+	$('.slider-tabs').each(function () {
+		$(this).slick({
+			arrows: false,
+			dots: false,
+			infinite: false,
+			variableWidth: true,
+			focusOnSelect: true,
+			touchThreshold: 1000,
+			asNavFor: $(this).parents("section").find('.slider-tab-container'),
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 1,
+						infinite: true,
+					}
+				}
+				]
+			});
+	  });
+
+
+	$('.slider-tab-container').each(function () {
+		$(this).slick({
+			arrows: false,
+			dots: false,
+			infinite: false,
+			fade: true,
+			asNavFor: $(this).parents("section").find('.slider-tabs'),
+			touchThreshold: 1000,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						infinite: true,
+					}
+				}
+				]
+			});
+	  });
+
+	  $('.slider-nav-rooms').each(function () {
+		$(this).slick({
+			arrows: false,
+			dots: false,
+			infinite: false,
+			variableWidth: true,
+			focusOnSelect: true,
+			touchThreshold: 1000,
+			asNavFor: $(this).parents("section").find('.slider-for-rooms'),
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						infinite: true,
+						slidesToShow: 1,
+					}
+				}
+				]
+			});
+	  });
+
+
+	$('.slider-for-rooms').each(function () {
+		$(this).slick({
+			arrows: false,
+			dots: false,
+			infinite: false,
+			fade: true,
+			asNavFor: $(this).parents("section").find('.slider-nav-rooms'),
+			touchThreshold: 1000,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 1,
+						fade: false,
+						centerMode: true,
+						infinite: true,
+						variableWidth: true
+					}
+				}
+				]
+			});
+	  });
+
+
+	  $('.slider-photo').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+	});
 	
 
 	$('.tabs li a').click(function(event) {
@@ -106,18 +221,43 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 	$('.tabs-page li a').click(function(event) {
 		event.preventDefault();
+		var textTab = $(this).html();
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
 		$(this).parents(".row").find(".tab-pane-page").fadeOut(0);
 		var selectTab2 = $(this).attr("href");
 		$(selectTab2).fadeIn(200);
 		$(this).parents(".row").find(".slider-images").slick('setPosition');
+
+		$(this).parent().parent().siblings(".btn-tab").html(textTab);
+		$(this).parent().parent().siblings(".btn-tab").removeClass("active");
 	});
 
 
 	$('.infrastructure .tabs-page li a').click(function() {
 		$(this).parents(".infrastructure").find(".content-tab").fadeIn(0);
 	});
+
+	$('.tab-mobile').click(function(event) {
+		event.preventDefault();
+		$(this).parent().siblings().find(".tab-mobile").removeClass("active")
+		$(this).parent().siblings().find(".tab-container-mobile").slideUp(200);
+		$(this).toggleClass("active")
+		$(this).siblings(".tab-container-mobile").slideToggle(200);
+	});
+
+	jQuery('.tabs-wrap').each(function() {
+		var currentTab = $(this);
+		var initalTextTab = currentTab.find(".active a").html();
+		currentTab.find(".btn-tab").html(initalTextTab);
+}); 
+$('.btn-tab').click(function() {
+	$(this).toggleClass("active");
+	$(this).siblings(".tabs-page").slideToggle(200);
+	$('.tabs-page li a').click(function(event) {
+		$(this).parent().parent().slideUp(200);
+	}); 
+}); 
 
 
 	$('.close-tab').click(function(event) {
@@ -126,6 +266,16 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 	});
 
+
+	{
+		if ($(window).width() < 992) { 
+			$("div.footer__title").click(function() {
+				$(this).toggleClass("active");
+				$(this).next(".footer__content").slideToggle(200);
+			}); 
+
+		}
+	}
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
