@@ -606,7 +606,7 @@
     }
     .content-billbord {
         padding-bottom: 90px;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 100px);
         min-height: 400px;
         justify-content: flex-end;
         padding-top: 0;
@@ -1305,6 +1305,10 @@
     .checkbox {
         font-size: 12px;
         justify-content: center;
+    }
+    .comprise .title-section,
+    .rooms .title-section br {
+        display: none;
     }
 }
 
