@@ -1302,6 +1302,10 @@
     .sandwich.active .sw-footer {
         top: 5px;
     }
+    .checkbox {
+        font-size: 12px;
+        justify-content: center;
+    }
 }
 
 /* Small Devices, Tablets */
