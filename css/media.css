@@ -606,6 +606,8 @@
     }
     .content-billbord {
         padding-bottom: 90px;
+        height: calc(100vh - 80px);
+        min-height: 400px;
         justify-content: flex-end;
         padding-top: 0;
     }
@@ -1293,6 +1295,12 @@
     }
     .header {
         position: fixed;
+    }
+    .sandwich.active .sw-topper {
+        top: 8px;
+    }
+    .sandwich.active .sw-footer {
+        top: 5px;
     }
 }
 
