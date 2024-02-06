@@ -174,7 +174,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			dots: false,
 			infinite: false,
 			fade: true,
-			swipe: false,
 			asNavFor: $(this).parents("section").find('.slider-nav-rooms'),
 			touchThreshold: 1000,
 			slidesToShow: 1,
