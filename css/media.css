@@ -1550,6 +1550,9 @@
     .item-catalog__image, .slider-gallery__item {
         height: 190px;
     }
+    .card-billbord .btn-main {
+        padding: 0 15px;
+    }
 }
 
 /* Custom, iPhone Retina */
