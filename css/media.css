@@ -1522,6 +1522,9 @@
         padding-top: 30px;
         padding-bottom: 50px; 
     }
+    .page-card ~ .consultation {
+        padding-top: 55px;
+    }
 }
 
 /* Small Devices, Tablets */
