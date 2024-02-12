@@ -687,6 +687,7 @@ form {
 	transition: all 0.3s;
 	cursor: pointer;
 }
+.slider-for-gallery:not(.slick-initialized) > li:not(:first-child),
 .slider-service:not(.slick-initialized) > li:not(:first-child),
 .slider-for-rooms:not(.slick-initialized) > li:not(:first-child),
 .slider-tab-container:not(.slick-initialized) > li:not(:first-child),
@@ -1524,6 +1525,7 @@ form {
 	padding: 0 35px;
 	padding-bottom: 19px;
 }
+.slider-nav-gallery:not(.slick-initialized),
 .slider-nav-rooms:not(.slick-initialized),
 .slider-tabs:not(.slick-initialized) {
 	display: none;
