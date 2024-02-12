@@ -18,8 +18,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
     $menu.removeClass("fixed").addClass("default");
   }
 
-
-  var show = true;
+  if ($('.item-about').length > 0) {
+	var show = true;
 	var countbox = ".item-about";
 	$(window).on("scroll load resize", function () {
         if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
@@ -39,6 +39,9 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
         	show = false;
         }
     });
+  }
+
+
 
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
@@ -261,6 +264,55 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
+	$('.slider-service').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					arrows: false,
+					dots: true,
+				}
+			}
+		]
+	});
+
+	$('.slider-for-gallery').each(function () {
+		$(this).slick({
+		arrows: false,
+		dots: false,
+		infinite: false,
+		asNavFor: $(this).siblings('.slider-nav-gallery'),
+		touchThreshold: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+	});
+});
+
+$('.slider-nav-gallery').each(function () {
+	$(this).slick({
+	arrows: false,
+	dots: false,
+	infinite: false,
+	focusOnSelect: true,
+	asNavFor: $(this).siblings('.slider-for-gallery'),
+	touchThreshold: 1000,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+	nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+});
+});
+
 	$('.tabs li a').click(function(event) {
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
@@ -271,6 +323,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 		$(this).parents("section").find(".slider-photo").slick('setPosition');
 		$(this).parents("section").find(".slider-balloon").slick('setPosition');
+		$(this).parents("section").find(".slider-for-gallery").slick('setPosition');
+		$(this).parents("section").find(".slider-nav-gallery").slick('setPosition');
 	});
 
 	$('.tabs-page li a').click(function(event) {

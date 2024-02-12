@@ -461,6 +461,136 @@
     .page-card ~ .consultation {
         padding-top: 80px;
     }
+
+    .wrapper_page {
+        padding-top: 122px;
+    }
+    .page-gallery,
+    .page-services,
+    .page-news,
+    .page-contacts {
+        padding-top: 35px;
+        padding-bottom: 70px;
+    }
+    .page-gallery .title-section,
+    .page-service .title-section,
+    .page-services .title-section,
+    .page-news .title-section,
+    .page-contacts .title-section {
+        padding-bottom: 28px;
+    }
+    .text-page {
+        font-size: 13px;
+    }
+    .text-page p {
+        margin-bottom: 15px;
+    }
+    .item-contact {
+        margin-bottom: 20px;
+    }
+    #map-contacts {
+        margin-top: 35px;
+        height: 535px;
+    }
+    .item-news {
+        height: 323px;
+        padding: 22px 25px;
+    }
+    .item-news__date {
+        padding: 5px 9px;
+        margin-bottom: 6px;
+    }
+    .item-news__title {
+        font-size: 26px;
+    }
+    .row_news > div {
+        margin-bottom: 22px;
+    }
+    .pager {
+        height: 55px;
+        margin-top: 8px;
+    }
+    .billbord-page .breadcrumbs {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .billbord-page {
+        min-height: 365px;
+    }
+    .article-content {
+        padding: 40px 90px;
+    }
+    .article-wrap h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .article-wrap ul {
+        padding-top: 15px;
+        padding-bottom: 33px;
+    }
+    .item-service__image {
+        height: 215px;
+    }
+    .item-service__content {
+        padding: 22px 14px;
+    }
+    .item-service__title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .item-service__text {
+        font-size: 13px;
+    }
+    .row_services > div {
+        margin-bottom: 22px;
+    }
+    .section-text .title-middle {
+        margin-bottom: 26px;
+    }
+    .section-text {
+        padding-top: 22px;
+    }
+    .breadcrumbs {
+        padding-top: 38px;
+        padding-bottom: 20px;
+        font-size: 13px;
+    }
+    .page-service {
+        padding-bottom: 70px;
+    }
+    .service-info__value {
+        font-size: 17px;
+        margin-left: 9px;
+    }
+    .slider-service .slick-prev {
+        left: -63px;
+    }
+    .slider-service .slick-next {
+        right: -63px;
+    }
+    .slider-service__item {
+        height: 330px;
+    }
+    .page-service p {
+        margin-bottom: 15px;
+    }
+    .page-gallery .tabs a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .slider-for-gallery__item {
+        height: 550px;
+    }
+    .slider-nav-gallery__item {
+        height: 182px;
+        margin: 0 10px;
+    }
+    .slider-nav-gallery {
+        margin-top: 20px;
+    }
+    .page-gallery .tab-container {
+        padding-top: 28px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -648,6 +778,65 @@
     }
     .item-catalog__image, .slider-gallery__item {
         height: 195px;
+    }
+
+    .wrapper_page {
+        padding-top: 98px;
+    }
+    .item-news {
+        height: 245px;
+    }
+    .item-news__title {
+        font-size: 22px;
+    }
+    .article-wrap p {
+        margin-bottom: 15px;
+    }
+    .item-service__image {
+        height: 185px;
+    }
+    .item-service__title {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .service-info__item {
+        display: block;
+    }
+    .service-info__item:nth-child(2) {
+        text-align: right;
+    }
+    .service-info__value {
+        margin: 0;
+        margin-top: 5px;
+    }
+    .slider-service .slick-prev {
+        left: -50px;
+    }
+    .slider-service .slick-next {
+        right: -50px;
+    }
+    .slider-service__item {
+        height: 275px;
+    }
+    .service-info {
+        padding: 0;
+    }
+    .page-service .title-section {
+        padding-bottom: 20px;
+    }
+    .breadcrumbs {
+        padding-top: 25px;
+        padding-bottom: 16px;
+    }
+    .page-gallery .tabs a {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .slider-for-gallery__item {
+        height: 430px;
+    }
+    .slider-nav-gallery__item {
+        height: 140px;
     }
 }
 
@@ -1525,6 +1714,71 @@
     .page-card ~ .consultation {
         padding-top: 55px;
     }
+    .wrapper_page {
+        padding-top: 68px;
+    }
+    #map-contacts .content-balloon {
+        max-width: 190px;
+    }
+    .wrapper_page .header__top .yandex-rating {
+        color: #fff;
+    }
+    .wrapper_page .header__top .yandex-rating img {
+        filter: brightness(0) invert(1);
+    }
+    .page-gallery,
+    .page-services,
+    .page-news,
+    .page-contacts {
+        padding-top: 30px;
+    }
+    .page-gallery .title-section,
+    .page-services .title-section,
+    .page-news .title-section,
+    .page-contacts .title-section {
+        padding-bottom: 23px;
+    }
+    #map-contacts {
+        margin-top: 25px;
+    }
+    .wrapper_page .header {
+        backdrop-filter: blur(30px);
+    }
+    .billbord-page .breadcrumbs {
+        padding-top: 30px;
+    }
+    .article-content {
+        padding: 30px 35px;
+    }
+    .article-wrap ul {
+        padding-top: 5px;
+        padding-bottom: 25px;
+    }
+    .article-wrap h2 {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+    .item-service__title {
+        font-size: 15px;
+    }
+    .slider-service {
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .slider-service__item {
+        height: 390px;
+    }
+    .slider-for-gallery__item {
+        height: 335px;
+    }
+    .slider-nav-gallery__item {
+        height: 105px;
+        margin: 0 5px;
+    }
+    .slider-nav-gallery {
+        margin: 0 -5px;
+        margin-top: 10px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -1543,6 +1797,59 @@
     .recomendation {
         padding-bottom: 30px;
     }
+    .page-services,
+    .page-news,
+    .page-contacts {
+        padding-bottom: 50px;
+    }
+    .page-numbers {
+        margin: 0 17px;
+    }
+    .article-content {
+        padding: 0;
+    }
+    .article-wrap {
+        padding-top: 30px;
+        margin: 0;
+    }
+    .billbord-page {
+        min-height: 315px;
+    }
+    .article-wrap img {
+        margin: 15px 0;
+    }
+    .article-wrap h2 {
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+    .item-service__image {
+        height: 250px;
+    }
+    .section-text {
+        padding-top: 15px;
+    }
+    .section-text .title-middle {
+        margin-bottom: 15px;
+    }
+    .section-text p {
+        margin-bottom: 15px;
+    }
+    .slider-service__item {
+        height: 290px;
+    }
+    .page-service {
+        padding-bottom: 50px;
+    }
+    .page-gallery .tabs a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .slider-for-gallery__item {
+        height: 245px;
+    }
+    .slider-nav-gallery__item {
+        height: 70px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -1552,6 +1859,29 @@
     }
     .card-billbord .btn-main {
         padding: 0 15px;
+    }
+    .item-news {
+        height: 215px;
+        padding: 15px;
+    }
+    .item-news__title {
+        font-size: 19px;
+    }
+    .item-news__date {
+        font-size: 13px;
+        padding-bottom: 4px;
+    }
+    .item-service__image {
+        height: 205px;
+    }
+    .slider-service__item {
+        height: 235px;
+    }
+    .slider-for-gallery__item {
+        height: 185px;
+    }
+    .slider-nav-gallery__item {
+        height: 55px;
     }
 }
 
