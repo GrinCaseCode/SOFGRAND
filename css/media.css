@@ -284,7 +284,7 @@
         padding: 0 7px;
     }
     .item-about__title {
-        font-size: 32px;
+        font-size: 30px;
     }
     .socials {
         padding: 80px 0;
@@ -465,6 +465,9 @@
     .wrapper_page {
         padding-top: 122px;
     }
+    .page-reviews,
+    .page-vacancies,
+    .page-sertificats,
     .page-gallery,
     .page-services,
     .page-news,
@@ -472,6 +475,9 @@
         padding-top: 35px;
         padding-bottom: 70px;
     }
+    .page-reviews .title-section,
+    .page-vacancies .title-section,
+    .page-sertificats .title-section,
     .page-gallery .title-section,
     .page-service .title-section,
     .page-services .title-section,
@@ -590,6 +596,87 @@
     }
     .page-gallery .tab-container {
         padding-top: 28px;
+    }
+    .row_numbers {
+        padding-top: 25px;
+    }
+    .page-about {
+        padding-bottom: 95px;
+    }
+    .text-about p {
+        margin-bottom: 20px;
+    }
+    .page-catalog .title-section {
+        max-width: 726px;
+        padding-bottom: 23px;
+        text-align: center;
+    }
+    .descr-section {
+        max-width: 1010px;
+        padding-bottom: 50px;
+    }
+    .room-catalog {
+        height: 640px;
+        padding: 0 50px;
+        margin-bottom: 30px;
+    }
+    .room-catalog__name {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .room-catalog__content {
+        width: 415px;
+        min-height: 400px;
+        padding: 33px;
+    }
+    .item-sertificat__image {
+        height: 517px;
+        margin-bottom: 5px;
+    }
+    .item-sertificat__title {
+        font-size: 16px;
+    }
+    .item-sertificat__content {
+        padding: 23px 30px;
+    }
+    .item-question__head {
+        padding: 20px 25px;
+        font-size: 21px;
+    }
+    .item-question__head span {
+        font-size: 13px;
+    }
+    .item-question {
+        margin-bottom: 22px;
+    }
+    .item-question__content {
+        padding: 30px 25px;
+        font-size: 13px;
+        padding-top: 0;
+    }
+    .item-question.active .item-question__head span {
+        font-size: 16px;
+    }
+    .consultation_question .title-section,
+    .consultation_vacancy .title-section {
+        padding-bottom: 30px;
+        padding-top: 0;
+    }
+    .consultation_question .consultation-block,
+    .consultation_vacancy .consultation-block {
+        padding: 50px 0;
+    }
+    .file-upload label {
+        height: 50px;
+    }
+    .consultation_question .consultation-block .btn-main {
+        height: 50px;
+    }
+    .page-questions .item-question__content {
+        padding-right: 20px;
+    }
+    .page-reviews {
+        padding-bottom: 50px;
     }
 }
 /* Large Devices, Wide Screens */
@@ -837,6 +924,44 @@
     }
     .slider-nav-gallery__item {
         height: 140px;
+    }
+    .page-about .title-section {
+        padding: 22px 0;
+    }
+    .page-about .row > div:last-child .item-about__title {
+        font-size: 24px;
+    }
+    .page-catalog .title-section {
+        max-width: 636px;
+        padding-bottom: 15px;
+    }
+    .descr-section {
+        max-width: 800px;
+        padding-bottom: 25px;
+    }
+    .room-catalog {
+        height: 499px;
+        padding: 0 33px;
+        margin-bottom: 23px;
+    }
+    .room-catalog__name {
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+    .room-catalog__content {
+        width: 370px;
+        min-height: 350px;
+        padding: 25px;
+    }
+    .page-catalog {
+        padding-top: 35px;
+        padding-bottom: 60px;
+    }
+    .item-sertificat__image {
+        height: 400px;
+    }
+    .item-sertificat__content {
+        padding: 20px 15px;
     }
 }
 
@@ -1726,12 +1851,20 @@
     .wrapper_page .header__top .yandex-rating img {
         filter: brightness(0) invert(1);
     }
+    .page-reviews,
+    .page-questions,
+    .page-vacancies,
+    .page-sertificats,
     .page-gallery,
     .page-services,
     .page-news,
     .page-contacts {
         padding-top: 30px;
     }
+    .page-reviews .title-section,
+    .page-questions .title-section,
+    .page-vacancies .title-section,
+    .page-sertificats .title-section,
     .page-gallery .title-section,
     .page-services .title-section,
     .page-news .title-section,
@@ -1778,6 +1911,47 @@
     .slider-nav-gallery {
         margin: 0 -5px;
         margin-top: 10px;
+    }
+    .col-main {
+        width: 33.3333%;
+    }
+    .row_numbers > div {
+        margin-top: 20px;
+    }
+    .row_numbers {
+        padding-top: 5px;
+        justify-content: center;
+    }
+    .page-about {
+        padding-bottom: 30px;
+    }
+    .page-catalog .title-section {
+        max-width: 473px;
+    }
+    .room-catalog {
+        height: 420px;
+        padding: 0 35px;
+        margin-bottom: 20px;
+    }
+    .room-catalog__content {
+        width: 100%;
+        min-height: 310px;
+    }
+    .item-sertificat__image {
+        height: 472px;
+    }
+    .page-questions,
+    .page-vacancies {
+        padding-bottom: 40px;
+    }
+    .consultation_question .consultation-block {
+        padding: 40px 30px;
+    }
+    .consultation_question .checkbox {
+        margin-top: 24px;
+    }
+    .page-reviews {
+        padding-bottom: 30px;
     }
 }
 
@@ -1850,6 +2024,25 @@
     .slider-nav-gallery__item {
         height: 70px;
     }
+    .col-main {
+        width: 50%;
+    }
+    .text-about p {
+        margin-bottom: 15px;
+    }
+    .item-sertificat {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .item-sertificat__image {
+        height: 565px;
+    }
+    .consultation_vacancy .consultation-block {
+        padding: 50px 30px;
+    }
+    .item-question__head {
+        font-size: 19px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -1882,6 +2075,75 @@
     }
     .slider-nav-gallery__item {
         height: 55px;
+    }
+    .row_numbers {
+        margin: 0 -5px;
+    }
+    .row_numbers > div {
+        padding: 0 5px;
+        margin-top: 10px;
+    }
+    .page-about .row > div:last-child .item-about__title {
+        font-size: 21px;
+    }
+    .page-about .about__image {
+        margin-top: 20px;
+    }
+    .room-catalog__buttons {
+        display: block;
+    }
+    .room-catalog .btn-main {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .room-catalog p {
+        margin-bottom: 15px;
+    }
+    .room-catalog__content {
+        padding: 15px;
+    }
+    .room-catalog {
+        height: 390px;
+        padding: 0 20px;
+    }
+    .page-catalog {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .descr-section {
+        font-size: 13px;
+        line-height: 140%;
+    }
+    .item-sertificat__image {
+        height: 470px;
+    }
+    .item-sertificat {
+        max-width: 336px;
+    }
+    .consultation_question .consultation-block,
+    .consultation_vacancy .consultation-block {
+        padding: 30px 20px;
+    }
+    .item-question__head {
+        padding: 15px 15px;
+        font-size: 19px;
+    }
+    .item-question__content {
+        padding: 22px 15px;
+        padding-top: 0;
+    }
+    .item-question__head i {
+        margin-top: 4px;
+        margin-right: 2px;
+    }
+    .item-question__content p {
+        margin-bottom: 10px;
+    }
+    .page-questions .item-question__head {
+        font-size: 17px;
+    }
+    .page-questions .item-question {
+        margin-bottom: 15px;
     }
 }
 
