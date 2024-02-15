@@ -15,11 +15,12 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
 	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/fullPage.js-master/dist/fullpage.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.6" />
-	<link rel="stylesheet" href="css/media.css?ver=1.6" />
+	<link rel="stylesheet" href="css/main.css?ver=1.12" />
+	<link rel="stylesheet" href="css/media.css?ver=1.12" />
 </head>
 <body>
 
@@ -139,7 +140,14 @@
 			</div>
 		</header>
 
-		<section class="billbord">
+		<div id="fullpage">
+
+		<section class="section billbord">
+			<div class="video-billbord">
+				<video width="100%" data-keepplaying height="auto" preload="auto" autoplay="autoplay" poster="img/billbord.jpg" loop autoplay muted>
+					<source src="img/video.mp4" type="video/mp4"></source> 
+				</video>
+			</div>
 			<div class="container">
 				<div class="content-billbord">
 					<h1 class="title-big">Новый современный отель на берегу Чёрного моря <br>по системе «Всё включено»</h1>
@@ -148,7 +156,7 @@
 			</div>
 		</section>
 
-		<section class="rooms">
+		<section class="section rooms">
 			<div class="container">
 				<h2 class="title-section">Выбирайте комфортный вариант проживания <br>и наслаждайтесь отдыхом</h2>
 			</div>
@@ -300,7 +308,7 @@
 			</div>
 		</section>
 
-		<section class="comprise">
+		<section class="section comprise">
 			<div class="container">
 				<h2 class="title-section">Мы предлагаем нашим клиентам настоящую <br>систему «Всё включено»</h2>
 				<ul class="slider-tabs tabs">
@@ -706,7 +714,7 @@
 			</ul>
 		</section>
 
-		<section class="infrastructure">
+		<section class="section infrastructure">
 			<div class="container">
 				<h2 class="title-section">Инфраструктура нашего <br>Отеля</h2>
 				<div class="row">
@@ -965,7 +973,7 @@
 			</div>
 		</section>
 
-		<section class="services">
+		<section class="section services">
 			<div class="container">
 				<h2 class="title-section">Услуги нашего отеля</h2>
 				<ul class="slider-tabs tabs">
@@ -1185,7 +1193,7 @@
 			</div>
 		</section>
 
-		<section class="locations">
+		<section class="section locations">
 			<div class="container">
 				<h2 class="title-section">Отель SOFGRAND порадует Вас своим удобным расположением</h2>
 			</div>
@@ -1205,7 +1213,7 @@
 			</div>
 		</section>
 
-		<section class="reviews">
+		<section class="section reviews">
 			<div class="container">
 				<h2 class="title-section">Отзывы наших клиентов</h2>
 				<div class="block-review">
@@ -1255,7 +1263,7 @@
 			</div>
 		</section>
 
-		<section class="consultation">
+		<section class="section consultation">
 			<div class="container">
 				<div class="consultation-block">
 					<div class="row">
@@ -1306,7 +1314,7 @@
 			</div>
 		</section>
 
-		<section class="offers">
+		<section class="section offers">
 			<div class="container">
 				<h2 class="title-section">Спецпредложения</h2>
 				<ul class="slider-offers">
@@ -1353,7 +1361,7 @@
 			</div>
 		</section>
 
-		<section class="about">
+		<section class="section about">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5 about__left">
@@ -1366,25 +1374,25 @@
 							<div class="row row_about">
 								<div class="col-6">
 									<div class="item-about">
-										<div class="item-about__title"><span data-from="0" data-to="2021">0</span></div>
+										<div class="item-about__title"><span>2021</span></div>
 										<p>года постройки</p>
 									</div>
 								</div>
 								<div class="col-6">
 									<div class="item-about">
-										<div class="item-about__title"><span data-from="0" data-to="300">0</span></div>
+										<div class="item-about__title"><span>300</span></div>
 										<p>метров до пляжа</p>
 									</div>
 								</div>
 								<div class="col-6">
 									<div class="item-about">
-										<div class="item-about__title"><span data-from="0" data-to="138">0</span></div>
+										<div class="item-about__title"><span>138</span></div>
 										<p>космфортных номеров</p>
 									</div>
 								</div>
 								<div class="col-6">
 									<div class="item-about">
-										<div class="item-about__title"><span data-from="0" data-to="9">0</span></div>
+										<div class="item-about__title"><span>9</span></div>
 										<p>этажей с лифтом</p>
 									</div>
 								</div>
@@ -1400,7 +1408,7 @@
 			</div>
 		</section>
 
-		<section class="socials">
+		<section class="section socials">
 			<div class="container">
 				<div class="socials-block">
 					<h1 class="title-section">Больше интересного о нас здесь</h1>
@@ -1413,7 +1421,7 @@
 			</div>
 		</section>
 
-		<footer class="footer">
+		<footer class="section footer">
 			<div class="container">
 				<div class="footer__logo">
 					<a href="#" class="logo">
@@ -1547,12 +1555,13 @@
 							<div class="create">Сделано в <a href="#"><img src="img/copy.svg" alt="alt"></a></div>
 						</div>
 						<div class="col-xl-5 col-lg">
-							<a href="#" class="btn_top"><i class="far fa-arrow-up"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+	</div>
 		
 	</div>
 
@@ -1565,12 +1574,12 @@
 	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
 	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/fullPage.js-master/dist/fullpage.js"></script>
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
-	<script src="libs/jquery-spincrement/jquery.spincrement.min.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.6"></script>
+	<script src="js/common.js?ver=1.12"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script>
 		$(document).ready(function() {
