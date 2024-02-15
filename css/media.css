@@ -1973,6 +1973,13 @@
     .footer-bottom {
         padding-bottom: 15px;
     }
+    .comprise .title-section,
+    .rooms .title-section {
+        padding-top: 0;
+    }
+    .consultation-block {
+        margin-top: 0;
+    }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
