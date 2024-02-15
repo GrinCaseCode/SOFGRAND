@@ -305,7 +305,6 @@ form {
 .content-billbord {
 	padding-top: 140px;
 	height: 100vh;
-	min-height: 600px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -379,8 +378,8 @@ form {
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 .unit-room {
-	height: 800px;
-	padding-top: 50px;
+	height: 100vh;
+	padding-top: 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -531,8 +530,6 @@ form {
 }
 
 .comprise {
-	padding-top: 58px;
-	padding-bottom: 52px;
 	backdrop-filter: blur(20px);
 	background: #f9f4f1;
 }
@@ -629,14 +626,14 @@ form {
 }
 
 .infrastructure .tabs-page {
-	padding-top: 200px;
+	padding-top: 225px;
 	max-width: 333px;
 }
 .infrastructure .tabs-page a::after {
 	display: none;
 }
 .infrastructure .title-section {
-	top: 60px;
+	top: 100px;
 	left: 15px;
 	position: absolute;
 	z-index: 2;
@@ -695,8 +692,9 @@ form {
 .slider-images:not(.slick-initialized) > li:not(:first-child) {
 	display: none;
 }
+.about__image,
 .slider-images {
-	margin-right: calc((100vw - 1430px) / 2* -1);
+	margin-right: calc((100vw - 1460px) / 2* -1);
 }
 .slick-arrow {
 	width: 56px;
@@ -739,16 +737,14 @@ form {
 }
 
 .services {
-	padding-top: 42px;
-	padding-bottom: 52px;
 	position: relative;
 	z-index: 1;
 }
 .services .title-section {
-	padding-bottom: 33px;
+	padding-bottom: 25px;
 }
 .services .tab-container {
-	padding-top: 42px;
+	padding-top: 30px;
 }
 .services::after {
 	position: absolute;
@@ -833,7 +829,7 @@ form {
 	position: relative;
 }
 .map-catalog {
-	height: 800px;
+	height: 100vh;
 	width: 100%;
 }
 .locations::after {
@@ -952,7 +948,7 @@ form {
 	position: relative;
 }
 .locations .title-section {
-	top: 49px;
+	top: 100px;
 	left: 15px;
 	max-width: 598px;
 	z-index: 2;
@@ -963,14 +959,13 @@ form {
 }
 
 .reviews {
-	padding-top: 41px;
-	padding-bottom: 100px;
+	padding-top: 20px;
 }
 .block-review {
-	padding: 27px 86px;
-	padding-bottom: 22px;
-	font-size: 20px;
-	margin-bottom: 44px;
+    padding: 23px 75px;
+    padding-bottom: 20px;
+    font-size: 19px;
+    margin-bottom: 27px;
 	line-height: 140%;
 	color: #000;
 	font-weight: 500;
@@ -980,7 +975,7 @@ form {
 	background: #f1f4f4;
 }
 .block-review__head {
-	margin-bottom: 21px;
+	margin-bottom: 16px;
 	display: flex;
 	align-items: center;
 }
@@ -1035,18 +1030,19 @@ form {
 	color: #363636;
 }
 .reviews .title-section {
-	padding-bottom: 45px;
+	padding-top: 50px;
+	padding-bottom: 15px;
 }
 .columns-reviews {
 	column-gap: 30px;
 	columns: 2;
 }
 .image-review {
-	margin-bottom: 58px;
+	margin-bottom: 30px;
 	break-inside: avoid;
 }
 .image-review img {
-	max-width: 100%;
+	max-width: 500px;
 	height: auto;
 }
 .bottom-button {
@@ -1065,11 +1061,10 @@ form {
 	padding: 0 46px;
 }
 
-.consultation {
-	padding-bottom: 100px;
-}
+
 .consultation-block {
 	padding-top: 32px;
+	margin-top: 50px;
 	color: #fff;
 	background-image: url(../img/bg_consultation.jpg);
 	background-repeat: no-repeat;
@@ -1209,12 +1204,11 @@ form {
 }
 
 .offers {
-	padding-top: 60px;
-	padding-bottom: 175px;
 	background-color: #F1F4F4;
 }
 .offers .title-section {
-	padding-bottom: 59px;
+	padding-top: 40px;
+	padding-bottom: 30px;
 }
 .item-offer {
 	height: 454px;
@@ -1298,15 +1292,16 @@ form {
 }
 
 .about__logo {
-	margin-top: 69px;
-	margin-bottom: 41px;
+    margin-top: 96px;
+    margin-bottom: 16px;
+	width: 300px;
 }
 .about__logo img {
 	max-width: 100%;
 	height: auto;
 }
 .about .title-section {
-	margin-bottom: 33px;
+	margin-bottom: 20px;
 }
 .about p {
 	max-width: 559px;
@@ -1319,8 +1314,8 @@ form {
 	margin-top: 20px;
 }
 .item-about {
-	height: 180px;
-	padding: 20px 25px;
+    height: 165px;
+    padding: 17px 20px;
 	background: #f1ecdd;
 	display: flex;
 	align-items: flex-start;
@@ -1344,7 +1339,7 @@ form {
 }
 
 .socials {
-	padding: 100px 0;
+	padding: 20px 0;
 }
 .socials-block {
 	padding-top: 82px;
@@ -1615,7 +1610,6 @@ form {
 	border-color: #fff;
 }
 .billbord.billbord_card {
-	padding-bottom: 47px;
 	background-image: url(../img/billbord_card.jpg);
 }
 .billbord.billbord_card .title-big {
@@ -1624,8 +1618,8 @@ form {
 	text-align: left;
 	margin-left: 0;
 }
-.billbord.billbord_card  .content-billbord {
-	min-height: 800px;
+.billbord.billbord_card .content-billbord {
+	padding-bottom: 30px;
 	align-items: flex-start;
 }
 .billbord__bottom {
@@ -1642,7 +1636,7 @@ form {
 }
 .card-billbord li {
 	padding-left: 48px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	position: relative;
 }
 .card-billbord sup {
@@ -1705,8 +1699,6 @@ form {
 }
 .page-card {
 	font-size: 14px;
-	padding-top: 58px;
-	padding-bottom: 66px;
 	background: #f9f4f1;
 	line-height: 160%;
 }
@@ -1743,8 +1735,7 @@ form {
 	padding-right: 120px;
 }
 .card-main {
-	top: 86px;
-	position: sticky;
+
 	transition: all 0.3s;
 }
 .card-main__image {
@@ -1778,13 +1769,9 @@ form {
 .card-main .btn-main {
 	padding: 0 50px;
 }
-.gallery {
-	padding-top: 56px;
-	padding-bottom: 107px;
-}
 .recomendation .title-section,
 .gallery .title-section {
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 .slider-gallery__item {
 	height: 294px;
@@ -1841,8 +1828,6 @@ form {
 	right: -15px;
 }
 .recomendation {
-	padding-top: 54px;
-	padding-bottom: 102px;
 	background-color: #F9F4F1;
 }
 .slider-catalog .slick-track {
@@ -1906,9 +1891,6 @@ form {
 }
 .item-catalog .link-common {
 	margin-top: auto;
-}
-.page-card ~ .consultation {
-	padding-top: 100px;
 }
 .slick-dots {
 	bottom: 0;
@@ -2642,4 +2624,65 @@ form {
 }
 .page-reviews {
 	padding-bottom: 70px;
+}
+.infrastructure .image-tab {
+	height: 100vh;
+}
+.about__image {
+	height: 100vh;
+	min-height: 100%;
+}
+.slider-images .image-tab img,
+.about__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+.rooms .title-section {
+	padding-top: 60px;
+}
+.comprise .title-section {
+    padding-top: 35px;
+}
+.services .title-section {
+	padding-top: 40px;
+}
+.footer__logo .logo {
+	margin-top: 50px;
+}
+.fp-watermark {
+	display: none !important;
+}
+
+.video-billbord video {
+	position: absolute;
+	left: 50%; 
+	top: 50%;
+	min-width: 100%; 
+	min-height: 100%; 
+	object-fit: cover;
+	transform: translate(-50%, -50%); 
+}
+.video-billbord {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	border-radius: 24px;
+	z-index: -1;
+}
+.section_page .container {
+	padding-top: 110px;
+	padding-bottom: 70px;
+}
+.gallery .fp-overflow,
+.recomendation .fp-overflow {
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }

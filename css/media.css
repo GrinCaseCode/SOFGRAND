@@ -59,10 +59,6 @@
     .content-billbord {
         padding-top: 120px;
     }
-    .unit-room {
-        height: 680px;
-        padding-top: 30px;
-    }
     .title-section {
         font-size: 31px;
     }
@@ -100,18 +96,17 @@
     .tabs a {
         padding-bottom: 17px;
     }
-    .comprise {
-        padding-top: 42px;
-        padding-bottom: 48px;
-    }
     .comprise .title-section {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
     .comprise .tab-container {
         padding-top: 24px;
     }
     .image-tab img {
-        max-width: 930px;
+        max-width: 840px;
+    }
+    .comprise .slider-tab-container {
+        margin-top: 20px;
     }
     .comprise-block {
         padding: 38px;
@@ -128,18 +123,19 @@
         height: 63px;
         padding-right: 11px;
     }
+    .about__image,
     .slider-images {
-        margin-right: calc((100vw - 1135px) / 2* -1);
+        margin-right: calc((100vw - 1157px) / 2* -1);
     }
     .infrastructure .tabs-page a {
-        height: 58px;
+        height: 53px;
     }
     .infrastructure .tabs-page {
-        padding-top: 157px;
+        padding-top: 185px;
         max-width: 310px;
     }
     .infrastructure .title-section {
-        top: 39px;
+        top: 90px;
     }
     .slider-images .slick-arrow {
         bottom: 23px;
@@ -166,7 +162,7 @@
         padding-top: 31px;
     }
     .slider-photo__item {
-        height: 425px;
+        height: 395px;
     }
     .content-service {
         padding: 45px 29px;
@@ -182,26 +178,20 @@
     .slick-arrow img {
         max-width: 20px;
     }
-    .services {
-        padding-top: 36px;
-        padding-bottom: 45px;
-    }
     .locations .title-section {
-        top: 35px;
         max-width: 550px;
     }
     .locations .tabs_bottom {
         max-width: 445px;
     }
     .reviews .title-section {
-        padding-bottom: 27px;
-    }
-    .reviews {
-        padding-top: 35px;
-        padding-bottom: 75px;
+        padding-bottom: 20px;
     }
     .image-review {
-        margin-bottom: 40px;
+        margin-bottom: 15px;
+    }
+    .image-review img {
+        max-height: 95px;
     }
     .consultation-block .title-section {
         padding-top: 23px;
@@ -228,15 +218,8 @@
         font-size: 11px;
         margin-top: 19px;
     }
-    .consultation {
-        padding-bottom: 75px;
-    }
     .offers .title-section {
         padding-bottom: 35px;
-    }
-    .offers {
-        padding-top: 44px;
-        padding-bottom: 135px;
     }
     .row > div,
     .slider-offers .slick-slide {
@@ -262,19 +245,18 @@
         padding: 7px;
     }
     .about__logo {
-        margin-top: 50px;
-        margin-bottom: 28px;
-        width: 300px;
+        margin-bottom: 20px;
+        width: 280px;
         max-width: 100%;
     }
     .about__image img {
         max-width: 900px;
     }
     .about .title-section {
-        margin-bottom: 22px;
+        margin-bottom: 16px;
     }
     .item-about {
-        height: 165px;
+        height: 135px;
         padding: 16px 21px;
     }
     .row_about {
@@ -285,9 +267,6 @@
     }
     .item-about__title {
         font-size: 30px;
-    }
-    .socials {
-        padding: 80px 0;
     }
     .socials-block {
         padding-top: 60px;
@@ -322,10 +301,13 @@
         padding-bottom: 19px;
     }
     .block-review {
-        padding: 25px 70px;
-        padding-bottom: 22px;
+        padding: 20px 61px;
+        padding-bottom: 19px;
         font-size: 18px;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
+    }
+    .block-review__head {
+        margin-bottom: 16px;
     }
     .comprise .link-tab {
         padding: 0 18px;
@@ -333,10 +315,10 @@
     }
     .services .link-tab {
         padding: 0 21px;
-        padding-bottom: 16px;
+        padding-bottom: 12px;
     }
     .services .slider-tab-container {
-        margin-top: 34px;
+        margin-top: 25px;
     }
     .header__fixed .menu {
         margin-left: -15px;
@@ -384,13 +366,8 @@
     .billbord .breadcrumbs {
         padding: 30px 0;
     }
-    .billbord.billbord_card .content-billbord {
-        min-height: 725px;
-    }
     .page-card {
         font-size: 13px;
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
     .title-middle {
         font-size: 26px;
@@ -415,12 +392,8 @@
     .card-main__price {
         font-size: 18px;
     }
-    .gallery {
-        padding-top: 39px;
-        padding-bottom: 80px;
-    }
     .recomendation .title-section, .gallery .title-section {
-        padding-bottom: 25px;
+        padding-bottom: 20px;
     }
     .slider-catalog .slick-slide, .slider-gallery .slick-slide {
         padding: 0 10px;
@@ -453,13 +426,6 @@
     }
     .item-catalog__title {
         margin-bottom: 28px;
-    }
-    .recomendation {
-        padding-top: 40px;
-        padding-bottom: 85px;
-    }
-    .page-card ~ .consultation {
-        padding-top: 80px;
     }
 
     .wrapper_page {
@@ -678,6 +644,27 @@
     .page-reviews {
         padding-bottom: 50px;
     }
+    .row_about > div {
+        margin-top: 14px;
+    }
+    .unit-room__content li {
+        margin-bottom: 25px;
+    }
+    .comprise .title-section {
+        padding-bottom: 25px;
+    }
+}
+@media only screen and (max-width : 1500px) {
+    .image-review {
+        margin-bottom: 11px;
+    }
+    .about__logo {
+        margin-bottom: 11px;
+        width: 245px;
+    }
+    .about .title-section {
+        margin-bottom: 10px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -733,6 +720,7 @@
     .title-section {
         font-size: 27px;
     }
+    .about__image,
     .slider-images {
         margin-right: calc((100vw - 890px) / 2* -1);
     }
@@ -746,9 +734,6 @@
     .slider-photo__item {
         height: 365px;
     }
-    .map-catalog {
-        height: 650px;
-    }
     .locations .tabs_bottom {
         max-width: 380px;
     }
@@ -759,7 +744,7 @@
         padding: 20px 35px;
         padding-bottom: 22px;
         font-size: 16px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     .block-review__head img {
         max-width: 35px;
@@ -785,19 +770,15 @@
         height: 75px;
         font-size: 24px;
     }
-    .offers {
-        padding-bottom: 90px;
-    }
     .about__logo {
-        margin-top: 28px;
-        margin-bottom: 15px;
-        width: 240px;
+        margin-bottom: 12px;
+        width: 170px;
     }
     .about .title-section {
         margin-bottom: 15px;
     }
     .item-about {
-        height: 155px;
+        height: 120px;
     }
     .about__image img {
         max-width: 770px;
@@ -817,7 +798,7 @@
         padding-bottom: 14px;
     }
     .services .slider-tab-container {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .header__fixed .menu li {
         padding: 0 6px;
@@ -838,9 +819,6 @@
     }
     .billbord .breadcrumbs {
         padding: 20px 0;
-    }
-    .billbord.billbord_card .content-billbord {
-        min-height: 630px;
     }
     .page-card .page-card__left {
         padding-right: 15px;
@@ -963,6 +941,42 @@
     .item-sertificat__content {
         padding: 20px 15px;
     }
+    .comprise .title-section {
+        padding-bottom: 20px;
+    }
+    .infrastructure .tabs-page {
+        max-width: 250px;
+    }
+    .infrastructure .tabs-page a {
+        height: 50px;
+    }
+    .services .title-section {
+        padding-bottom: 20px;
+    }
+    .footer__nav li {
+        margin-bottom: 3px;
+    }
+    .footer {
+        font-size: 11px;
+    }
+    .footer__logo {
+        margin-bottom: 8px;
+    }
+    .footer-bottom {
+        margin-top: 15px;
+    }
+    .unit-room__content li {
+        margin-bottom: 15px;
+    }
+    .image-review img {
+        max-height: 80px;
+    }
+    .wrap-tab__inner {
+        padding-top: 40px;
+    }
+    .footer__nav {
+        padding-bottom: 5px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -1078,7 +1092,6 @@
         font-size: 20px;
     }
     .rooms .title-section {
-        margin-bottom: 30px;
        position: relative;
        top: 0;
        left: 0;
@@ -1091,8 +1104,6 @@
         display: block;
     }
     .rooms {
-        padding-top: 30px;
-        padding-bottom: 25px;
         background-image: url(../img/bg_rooms_mobile.jpg);
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -1134,7 +1145,7 @@
         transform: scale(1);
     }
     .unit-room__mobile-image {
-        height: 398px;
+        height: 360px;
         top: 0;
         left: 0;
         width: 100%;
@@ -1198,10 +1209,6 @@
         bottom: -2px;
         background-image: url(../img/arrow_slider2.svg);
     }
-    .comprise {
-        padding-top: 34px;
-        padding-bottom: 17px;
-    }
     .comprise .title-section {
         padding-bottom: 24px;
     }
@@ -1239,8 +1246,10 @@
         border: none;
     }
     .tab-mobile {
-        height: 56px;
-        padding: 0 9px;
+        height: 46px;
+        font-size: 13px;
+        padding: 0 14px;
+        line-height: 140%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1281,10 +1290,10 @@
         display: none;
     }
     .tab-container-mobile .content-tab {
-        margin-bottom: 20px;
+        margin-bottom: 13px;
     }
     .infrastructure .title-section {
-        padding-bottom: 24px;
+        padding-bottom: 15px;
         position: relative;
         top: 0;
         left: 0;
@@ -1301,9 +1310,6 @@
     }
     .image-tab img {
         max-width: 100%;
-    }
-    .infrastructure {
-        padding: 30px 0;
     }
     .tabs-wrap {
         margin-bottom: 12px;
@@ -1386,8 +1392,8 @@
         height: 45px;
     }
     .infrastructure .content-tab {
-        padding: 24px 16px;
-        padding-bottom: 15px;
+        padding: 18px 14px;
+        padding-bottom: 13px;
         max-width: 100%;
         min-height: auto;
         background: #363636;
@@ -1396,10 +1402,13 @@
         font-size: 18px;
     }
     .content-tab .title-block {
-        margin-bottom: 24px;
+        margin-bottom: 15px;
+    }
+    .content-tab p {
+        margin-bottom: 10px;
     }
     .content-service {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 140%;
         margin: 0;
         margin-bottom: 8px;
@@ -1414,7 +1423,7 @@
         display: none;
     }
     .slider-photo__item {
-        height: 240px;
+        height: 225px;
     }
     .slider-photo .slick-prev {
         left: 0;
@@ -1433,23 +1442,16 @@
     .services .title-section {
         padding-bottom: 24px;
     }
-    .services {
-        padding-top: 28px;
-        padding-bottom: 22px;
-    }
     .services .slider-tab-container {
         margin-top: 23px;
     }
-    .map-catalog {
-        height: 628px;
-    }
     .locations .title-section {
-        top: 30px;
+        top: 80px;
         max-width: 355px;
     }
     .locations .tabs.tabs_bottom {
         gap: 16px;
-        bottom: 19px;
+        bottom: 60px;
         position: absolute;
         top: auto;
         margin: 0;
@@ -1471,10 +1473,6 @@
     .content-balloon {
         max-width: 160px;
         padding: 0;
-    }
-    .reviews {
-        padding-top: 30px;
-        padding-bottom: 48px;
     }
     .rating-wrap {
         display: block;
@@ -1554,14 +1552,8 @@
     .consultation-block .btn-main {
         margin-top: 24px;
     }
-    .consultation {
-        padding-bottom: 48px;
-    }
-    .offers {
-        padding-top: 25px;
-        padding-bottom: 36px;
-    }
     .offers .title-section {
+        padding-top: 20px;
         padding-bottom: 24px;
     }
     .item-offer__value {
@@ -1654,7 +1646,7 @@
     }
     .footer__content {
         display: none;
-        padding-top: 15px;
+        padding-top: 10px;
     }
     .footer__center,
     .footer__columns {
@@ -1664,8 +1656,8 @@
         display: block;
     }
     .footer__title {
-        font-size: 16px;
-        padding: 8px 0;
+        font-size: 15px;
+        padding: 6px 0;
         padding-right: 4px;
         cursor: pointer;
         margin: 0;
@@ -1765,7 +1757,7 @@
         font-size: 12px;
         justify-content: center;
     }
-    .comprise .title-section,
+    .comprise .title-section br,
     .rooms .title-section br {
         display: none;
     }
@@ -1773,7 +1765,6 @@
         overflow: hidden;
     }
     .billbord.billbord_card .content-billbord {
-        padding-top: 69px;
         min-height: initial;
         padding-bottom: 0;
         height: auto;
@@ -1803,8 +1794,6 @@
     }
     .page-card {
         font-size: 14px;
-        padding-top: 40px;
-        padding-bottom: 40px;
     }
     .title-middle {
         font-size: 22px;
@@ -1827,17 +1816,6 @@
     .card-main .btn-main {
         margin-top: 20px;
         padding: 0 45px;
-    }
-    .gallery {
-        padding-top: 27px;
-        padding-bottom: 50px;
-    }
-    .recomendation {
-        padding-top: 30px;
-        padding-bottom: 50px; 
-    }
-    .page-card ~ .consultation {
-        padding-top: 55px;
     }
     .wrapper_page {
         padding-top: 68px;
@@ -1953,8 +1931,49 @@
     .page-reviews {
         padding-bottom: 30px;
     }
+    .wrap-tab__inner {
+        padding-top: 0;
+    }
+    .content-tab {
+        font-size: 12px;
+        line-height: 140%;
+    }
+    .infrastructure .image-tab {
+        height: auto;
+    }   
+    .reviews .title-section {
+        padding-top: 0;
+    }
+    .content-service p {
+        margin-bottom: 10px;
+    }
+    .services .title-section {
+        padding-top: 20px;
+    }
+    .reviews {
+        padding-top: 0;
+    }
+    .about__image {
+        height: auto;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .about__image img {
+        object-fit: initial;
+    }
+    .section.about .fp-tableCell,
+    .section.about,
+    .section.socials .fp-tableCell,
+    .section.socials {
+         height: auto !important;
+    }
+    .footer__logo .logo {
+        margin-top: 0;
+    }
+    .footer-bottom {
+        padding-bottom: 15px;
+    }
 }
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .item-catalog__image, 
@@ -1964,12 +1983,6 @@
     .slider-gallery,
     .slider-catalog {
         padding-bottom: 40px;
-    }
-    .gallery {
-        padding-bottom: 40px;
-    }
-    .recomendation {
-        padding-bottom: 30px;
     }
     .page-services,
     .page-news,
@@ -2177,6 +2190,15 @@
     }
     .footer__content {
         display: block !important;
+    }
+    .fp-enabled body:not(.fp-viewing-0) .header__fixed {
+        transform: translateY(0px);
+    }
+    .fp-enabled body:not(.fp-viewing-0) .header__top,
+    .fp-enabled body:not(.fp-viewing-0) .header__bottom {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
     }
 }
 
